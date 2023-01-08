@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dream Home Furniture</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="site-main-wrapper">
+        <button class="hamberger">
+            <img src="{% static 'images/hamberger.svg'%}">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="{% static 'images/times.svg'%}" alt=""></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="{%  static 'images/logo.svg' %}" alt="">
+                        </div>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#services">Services</a>
+                            <a href="#work">Work</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button class="btn btn-primary">Contact</button>
+                    </div>
+                </nav>
+                <div class="hero flex items-center justify-between">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="{% static 'images/noman2.png' %}">
+                    </div>
+                    <div class="right flex-1">
+                        <h6>Khan Noman</h6>
+                        <h1>I’m a Creative Home <span> Designer</span></h1>
+                      
+                        <div>
+                            <button class="btn btn-secondary">GET Quote</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="about" class="about">
+            <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-img" src="{% static 'images/dreamhome.png' %}">
+                </div>
+                
+                <div class="flex-1 right">
+                    <h1>About <span>Company</span></h1>
+                    <h3>Dream Home Furniture</h3>
+                    <p>At Dream Home Furniture Company, we pride ourselves on our ability to create truly unique pieces of furniture that are both beautiful and functional. Our team of skilled furniture makers are dedicated to producing high-quality work that meets the needs and preferences of our clients. We have a strong understanding of design principles and are able to bring even the most complex visions to life through our craftsmanship.
+
+                        In addition to our furniture making skills, we also offer furniture fitting services. Our team of expert fitters have the knowledge and expertise needed to properly install or assemble any type of pre-made furniture in any home or business. We take great care to ensure that all of our furniture is properly fitted, resulting in a secure and stable final product.
+                        
+                        At Dream Home Furniture Company, we are committed to producing furniture that is built to last. Whether you're in need of custom pieces or expert installation services, we have the skills and dedication to bring your furniture dreams to life.</p>
+                    {% comment %} <div class="social">
+                        <a href="#"><img src="{% static 'images/website.svg'%}"></a>
+                        <a href="https://www.facebook.com/codersgyan"><img src="{% static 'images/facebook.svg' %}"></a>
+                        <a href="https://twitter.com/CoderGyan"> <img src="./images/twitter.svg" alt=""></a>
+                        <a href="#"> <img src="./images/pintrest.svg" alt=""></a>
+                    </div> {% endcomment %}
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services">
+            <div class="container">
+                <h1 class="section-heading"><span>Our </span>Services</h1>
+                <p>We provide high standar clean website for your business solutions</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="{% static 'images/design.jpg' %}" height="100px" width="150px" >
+                        <h2>Furniture design</h2>
+                        <p>This involves creating custom pieces or reproducing classic designs based on the needs and preferences of the client.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/furnituremaking.jpg' %}" height="100px" width="150px" >
+                        <h2>Furniture Making</h2>
+                        <p>This involves constructing new furniture by hand using a variety of materials, including wood, metal, and upholstery.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/furniturefitting.jpg' %}" height="100px" width="150px" >
+                        <h2>Furniture Fitting</h2>
+                        <p>This service involves putting together pre-made furniture, such as flat-pack pieces that require assembly.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/maintainance.jpg' %}" height="100px" width="150px" >
+                        <h2>Furniture Maintainance</h2>
+                        <p>This involves cleaning and caring for furniture to keep it in good condition over time.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/refinish.jpg' %}" height="100px" width="150px" >
+                        <h2>Furniture Refinishing</h2>
+                        <p>This service involves rejuvenating the surface of existing furniture, such as by sanding and re-staining wood or repainting metal pieces.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img src="{% static 'images/repair.jpg' %}" height="100px" width="150px" >
+                        <h2>Furniture Repair</h2>
+                        <p>This service involves fixing damage to furniture, such as repairing loose joints or replacing broken parts.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="freelancer">
+            <h1>We are Available For Fitting Works</h1>
+          
+        </section>
+    
+
+        <section id="work" class="work">
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Works</h1>
+                <p>We provide high standard work for your Dream home</p>
+
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Furniture Making</a>
+                        </div>
+                        <img src="{% static 'images/f1.jpg' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Furniture Making</a>
+                        </div>
+                        <img src="{% static 'images/f2.jpg' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Furniture Making</a>
+                        </div>
+                        <img src="{% static 'images/f3.jpg' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Furniture Making</a>
+                        </div>
+                        <img src="{% static 'images/f4.jpg' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Furniture Making</a>
+                        </div>
+                        <img src="{% static 'images/f5.jpg' %}">
+                    </div>
+                    <div class="card">
+                        <div class="overlay">
+                            <span>Category</span>
+                            <a href="#">Furniture Making</a>
+                        </div>
+                        <img src="{% static 'images/f6.jpeg' %}">
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+        <section class="contact" id="contact" >
+            <div class="container">
+                <h1 class="section-heading">Contact <span>Us</span></h1>
+                <p>We provide high standard Solutions for Your DreamHome</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/phone-2.svg" alt="">
+                        <h1>Call Us On</h1>
+                        <h6>+91 93246 52470</h6>
+                    </div>
+                    <div class="card">
+                        <img src="./images/msg.svg" alt="">
+                        <h1>Email Us At</h1>
+                        <h6>support@dreamhome85.com</h6>
+                    </div>
+                    <div class="card">
+                        <img src="./images/map.svg" alt="">
+                        <h1>Our WorkShop At</h1>
+                        <h6> Sakinaka khairaniroad Mumbai</h6>
+                    </div>
+
+                </div>
+            </div>
+            
+                   <center> <a href="https://api.whatsapp.com/send/?phone=919324652470" class="btn btn-primary" >Send Message on Whatsapp<a/></center>
+          
+        </section>
+        <footer>
+            <img class="footer-logo" src="./images/logo-2.svg" alt="">
+            <div class="footer-socials">
+                <a href="#"><img src="./images/website.svg" alt=""></a>
+                <a href="https://www.facebook.com/codersgyan"><img src="./images/facebook.svg" alt=""></a>
+                <a href="https://twitter.com/CoderGyan"> <img src="./images/twitter.svg" alt=""></a>
+                <a href="#"> <img src="./images/pintrest.svg" alt=""></a>
+                <a href="https://www.instagram.com/codersgyan/"> <img src="./images/instagram.svg" alt=""></a>
+            </div>
+            <div class="copyright">
+                Copyright 2023 © DreamHome
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+</body>
+
+</html>
